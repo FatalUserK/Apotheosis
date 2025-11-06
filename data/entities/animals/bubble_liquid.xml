@@ -15,7 +15,6 @@
 		    wait_for_kill_flag_on_death="0"
             fire_probability_of_ignition="0" 
 			ragdoll_fx_forced="DISINTEGRATED"
-			ragdoll_material="acid"
 			blood_material="acid"
 			blood_spray_material="acid"
 		    blood_multiplier="2"
@@ -117,5 +116,9 @@
 		</count_per_material_type>
 	</MaterialInventoryComponent>
 
-</Entity>
+	<LuaComponent
+		script_source_file="data/entities/animals/bubbles/populate_bubble.lua"
+		execute_on_added="1"
+	/>
 
+</Entity>
